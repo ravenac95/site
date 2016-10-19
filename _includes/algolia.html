@@ -1,0 +1,57 @@
+{% raw  %}
+<script type="text/html" id="hit-template">
+  <div class="hit">
+    <div class="hit-content">
+      <h3 class="hit-title">{{{title}}}</h3>
+      <p class="hit-text">{{{text}}}</p>
+    </div>
+  </div>
+</script>
+
+<script type="text/html" id="no-results-template">
+  <div id="no-results-message">
+    <p>We didn't find any results for the search <em>"{{query}}"</em>.</p>
+    <a href="." class="clear-all">Clear search</a>
+  </div>
+</script>
+{% endraw  %}
+
+<script type="text/javascript">
+  var search = instantsearch({
+    // Replace with your own values
+    appId: '3J8PEXNWZD',
+    apiKey: 'e9a5de9437dcbb1849e5c23eeb58be29', // search only API key, no ADMIN key
+    indexName: 'site',
+    urlSync: true
+  });
+
+  search.addWidget(
+    instantsearch.widgets.searchBox({
+      container: '#search-input',
+      placeholder: 'Search documentation'
+    })
+  );
+
+  search.addWidget(
+    instantsearch.widgets.hits({
+      container: '#hits',
+      hitsPerPage: 10,
+      templates: {
+        item: getTemplate('hit'),
+        empty: getTemplate('no-results')
+      }
+    })
+  );
+
+  search.addWidget(
+    instantsearch.widgets.stats({
+      container: '#stats'
+    })
+  );
+
+  search.start();
+
+  function getTemplate(templateName) {
+    return document.getElementById(templateName + '-template').innerHTML;
+  }
+</script>

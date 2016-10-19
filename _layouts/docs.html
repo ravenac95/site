@@ -3,7 +3,12 @@ layout: base
 ---
 
 <header>
-  <div class="container"><h2>Convox Documentation</h2></div>
+  <div class="container">
+    <h2>Convox Documentation</h2>
+
+    <div id="search-input"></div>
+    <div id="search-input-icon"></div>
+  </div>
 
   <ul>
     <li class="pull-right visible-md-block visible-lg-block"><h2 id="version"></h2></li>
@@ -52,6 +57,14 @@ layout: base
   </section>
 
   <section id="doc" class="col-md-9 col-sm-12 col-xs-12">
+    <div>
+      <div id="right-column">
+      <div id="sort-by-wrapper"><span id="sort-by"></span></div>
+      <div id="stats"></div>
+      <div id="hits"></div>
+      <div id="pagination"></div>
+    </div>
+
     <h1 class="title">{{ page.title }}</h1>
 
     <div class="content">
@@ -66,3 +79,5 @@ layout: base
     </div>
   </section>
 </div>
+
+{% include algolia.html %}
