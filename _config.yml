@@ -1,5 +1,12 @@
 url: https://convox.com
 
+gems:
+  - algoliasearch-jekyll
+
+algolia:
+  application_id: 3J8PEXNWZD
+  index_name: site
+
 excerpt_separator: <!--more-->
 
 kramdown:
