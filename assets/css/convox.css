@@ -10,7 +10,7 @@ body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 267px;
+  /*margin-bottom: 267px;*/
 }
 
 @font-face {
@@ -226,7 +226,11 @@ header .intro-text .name-desc {
   text-decoration: none;
 }
 
-.services {
+.contact .slack h2 {
+  margin-top: 50px;
+}
+
+.services, .contact {
   background-color: #f6f6f6;
   border-bottom: 1px solid #dddddd;
   padding-top: 35px;
@@ -943,9 +947,7 @@ h3 {
 }
 
 footer {
-  bottom: 0;
   color: #fff;
-  height: 267px;
   position: absolute;
   width: 100%;
 }
