@@ -6,7 +6,7 @@ info:
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0
-host: cx.ngrok.io
+host: localhost
 schemes:
   - https
 consumes:
@@ -1027,8 +1027,3 @@ definitions:
         type: string
       version:
         type: string
-
-securityDefinitions:
-  internalApiKey:
-    type: basic
-    in: header

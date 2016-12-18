@@ -39,10 +39,11 @@
       if (url && url.length > 1) {
         url = decodeURIComponent(url[1]);
       } else {
+        url = 'http://localhost:5080/api/manifest.yml'
         //url = "https://raw.githubusercontent.com/convox/rack/master/api/manifest.yml";
         //url = "https://raw.githubusercontent.com/convox/rack/6fe14e14cbb906a6ce597cfe9151f487e011aafb/api/manifest.yml";
         //url = "https://raw.githubusercontent.com/convox/rack/2f9d804afb5f58e6a4c2601ae1c4b5634c324c8d/api/manifest.yml";
-        url = "http://soulshake.ngrok.io/api/manifest.yml";
+        //url = "http://soulshake.ngrok.io/api/manifest.yml";
         //url = "http://petstore.swagger.io/v2/swagger.json";
       }
 
@@ -97,9 +98,8 @@
       function addApiKeyAuthorization(){
         var key = encodeURIComponent($('#input_apiKey')[0].value);
         if(key && key.trim() != "") {
-            var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("api_key", key, "query");
-            window.swaggerUi.api.clientAuthorizations.add("api_key", apiKeyAuth);
-            log("added key " + key);
+          console.log('key', key);
+          window.swaggerUi.api.clientAuthorizations.add('auth', new SwaggerClient.PasswordAuthorization('convox', key));
         }
       }
 
