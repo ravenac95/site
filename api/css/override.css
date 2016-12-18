@@ -1,0 +1,17 @@
+/* We don't need a username, so hide this field */
+
+.auth_label {
+    display: none;
+}
+
+#basic_auth__username auth_input {
+    display: none !important;
+}
+
+input.basic_auth__username auth_input {
+    display: none !important;
+}
+
+input.basic_auth__username.auth_input {
+    display: none !important;
+}
