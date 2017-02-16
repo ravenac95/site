@@ -17,7 +17,7 @@ layout: base
         </button>
         <ul class="dropdown-menu docs-index">
           {% for collection in site.collections %}
-            {% if (collection.label != "posts") and (collection.label != "guide") %}
+            {% if (collection.label != "posts") and (collection.label != "guide") and (collection.label != "heroku") %}
               <li class="dropdown-header">{{ collection.title }}</li>
               {% assign pages = collection.docs | sort: 'order' %}
               {% for page in pages %}
