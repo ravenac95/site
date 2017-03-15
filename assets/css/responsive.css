@@ -1,0 +1,442 @@
+/*
+ *
+ * SECTION A: Must be declared first
+ * TODO: merge with SECTION B
+ *
+ */
+
+/* MIN */
+
+@media (min-width: 768px) {
+  .navbar {
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    height: 30px;
+    padding: 11px 15px 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 75px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog .extras.affix {
+    width: 245px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog .extras.affix {
+    width: 245px;
+  }
+}
+
+/* MAX */
+
+@media (max-width: 479px) {
+  header .intro-text .name {
+    font-size: 30px;
+  }
+
+  header .intro-text .name-desc {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 620px) {
+  #features .box {
+    height: 300px;
+  }
+
+  #features .box p {
+    height: initial;
+  }
+  #features .box img {
+    display: none;
+  }
+}
+
+@media all and (max-width: 620px) {
+  header .btnshadow {
+    float: none;
+    margin-bottom: 8px;
+  }
+
+  header ul.actions li {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .blog .extras {
+    flex-direction: column;
+    padding: 35px;
+    width: 100%;
+  }
+
+  .blog .extras section {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #menu .navbar-nav li:last-child {
+    width: 115px;
+  }
+
+  footer .footer-bottom ul.nav-left-col {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 25px;
+    display: block;
+    overflow: hidden;
+  }
+
+  footer .footer-bottom p {
+    float: left !important;
+  }
+
+  section {
+    padding: 15px 0;
+  }
+
+  section.first {
+    padding-top: 75px;
+  }
+
+  header .container {
+    padding-top: 60px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog .content,
+  .blog.index .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .docs #doc {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jobs #mission {
+    padding: 30px 15px;
+  }
+
+  .jobs #mission p {
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing section {
+    padding: 15px 0;
+  }
+
+  #features .plan {
+    margin: 0 0 15px;
+    width: 100%;
+  }
+
+  #features .plan:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    font-size: 0.95em;
+  }
+
+  .post {
+    padding: 20px 20px 10px;
+  }
+
+  .blog h1 {
+    font-size: 1.75em;
+  }
+
+  .blog h2 {
+    font-size: 1.5em;
+  }
+
+  .blog h3 {
+    font-size: 1.25em;
+  }
+
+  .blog h4 {
+    font-size: 1.15em;
+  }
+
+  .blog h5 {
+    font-size: 1.05em;
+  }
+
+  .blog h6 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 991px) {
+  .blog .extras.affix {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .blog .content {
+    flex-direction: column;
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .blog .extras {
+    border-top: 1px solid #eee;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 65px;
+    width: 100%;
+  }
+
+  .blog .extras section {
+    margin-right: 40px;
+  }
+
+  .blog .extras section:last-of-type {
+    margin-right: 0;
+  }
+}
+
+
+/* RANGES */
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .navbar .navbar-nav > li > a {
+    padding: 15px 5px;
+  }
+}
+
+
+/*
+ *
+ * SECTION B: Must be declared last
+ * TODO: merge with SECTION A
+ *
+ */
+
+/* MIN */
+
+@media (min-width: 768px) {
+  .navbar-fixed-top .navbar-brand {
+    padding-top: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+	header .container {
+			padding-bottom: 37px;
+	}
+}
+
+/* MAX */
+
+@media (max-width: 620px) {
+  header ul.actions li {
+    margin-bottom:12px;
+  }
+
+  header .intro-text {
+    margin-top: 45px;
+  }
+
+  header .intro-text .name {
+    font-size: 32pt;
+  }
+
+  header .intro-text .name-desc p {
+    margin-bottom:20px;
+  }
+
+  #mc-embedded-subscribe {
+    display: block;
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+  }
+
+  input#mce-EMAIL {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    margin-bottom: 0px;
+  }
+
+  .blog .subscribe-form-field {
+    width: 100%;
+  }
+
+  .blog .subscribe-form-button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+	footer .footer-menu .footer-menu-section {
+		border-right: none;
+	}
+
+	footer .footer-menu .slack {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0;
+		padding: 10px 50px;
+	}
+
+	footer .footer-menu .slack h2,
+	footer .footer-menu .slack p,
+	footer .footer-menu .slack iframe {
+		text-align: center;
+		margin: 10px 0;
+	}
+}
+
+@media (max-width : 767px ) {
+  footer .col-sm-6 {
+    margin-bottom: 30px;
+  }
+
+  .testimonials .author {
+    margin-bottom: 3.5rem;
+    display: inline-block;
+  }
+
+  .trusted-client h3 {
+    text-align: center;
+  }
+
+  .trusted-client .thumbnails div {
+    width: 17%;
+  }
+
+  .pricing .plan {
+    margin: 0 0 50px !important;
+  }
+
+  header .container {
+    padding-top: 90px;
+  }
+}
+
+/* RANGES */
+
+@media (min-width : 768px) and (max-width : 991px) {
+  footer .footer-menu .footer-menu-section.break-on-small {
+    border-right: none;
+  }
+
+  footer .footer-menu .slack h2 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  footer .col-sm-6 {
+    margin-bottom: 30px;
+  }
+
+  #mc-embedded-subscribe {
+    display: block;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+
+  input#mce-EMAIL {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 0px;
+  }
+
+  .testimonials .author {
+    margin-bottom: 3rem;
+    display: inline-block;
+  }
+
+  .trusted-client h3 {
+    text-align: center;
+  }
+
+  .trusted-client .thumbnails div {
+    width: 15%;
+  }
+
+  .navbar .navbar-nav li a {
+    font-size: 16px;
+    padding: 5px 10px 10px 10px;
+  }
+
+  .pricing .plan {
+    width: 45%;
+    margin-bottom: 4rem;
+  }
+
+  .pricing .plan:first-of-type {
+    margin-left: 18px;
+  }
+  .pricing .plan:last-of-type {
+    margin-right: 18px;
+  }
+}
+
+@media (min-width : 992px) and (max-width : 1199px) {
+  footer .footer-menu .slack h2 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .testimonials .author {
+    margin-bottom: 3rem;
+    display: inline-block;
+  }
+
+  .trusted-client h3 {
+    text-align: center;
+  }
+
+  .pricing .plan {
+    width: 46%;
+    margin-bottom: 4rem;
+  }
+
+  .pricing .plan:first-of-type {
+    margin-left: 18px;
+  }
+  .pricing .plan:last-of-type {
+    margin-right: 18px;
+  }
+}
