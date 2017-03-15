@@ -3,10 +3,14 @@ layout: base
 ---
 
 <header>
-  <div class="container"><h2>Convox Documentation</h2></div>
-  {% include algolia.html %}
+  <div class="container text-center">
+    <h1>Convox Documentation</h1>
+    <div class="subheading">
+      For the latest developments see our <a href="https://github.com/convox/rack/releases">release notes</a> on GitHub.
+    </div>
+  </div>
 
-  <ul>
+  <ul class="margin-bottom-0">
     <li class="pull-right visible-md-block visible-lg-block"><h2 id="version"></h2></li>
     <li class="pull-right visible-xs-block visible-sm-block">
       <div class="btn-group visible-xs-block visible-sm-block pull-right" id="toc-collapsed">
@@ -53,6 +57,8 @@ layout: base
   </section>
 
   <section id="doc" class="col-md-9 col-sm-12 col-xs-12">
+    {% include algolia.html %}
+
     <h1 class="title">{{ page.title }}</h1>
 
     <div class="content">
