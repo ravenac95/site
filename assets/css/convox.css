@@ -1908,7 +1908,6 @@ input#mc-embedded-subscribe {
   border-radius: 10px;
   margin: 0 20px;
   padding: 0;
-  width: 22%;
 }
 
 .pricing .plan:first-of-type {
@@ -1951,11 +1950,15 @@ input#mc-embedded-subscribe {
   margin-left: 90px;
 }
 
-.pricing #services {
+.pricing section {
   background: #fff;
   border-bottom: 1px solid #ddd;
   margin: 0;
   text-align: center;
+}
+
+.pricing section.alternate {
+  background: #f7f7f7;
 }
 
 @media (max-width: 768px) {
