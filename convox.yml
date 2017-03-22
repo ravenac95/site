@@ -1,0 +1,13 @@
+balancers:
+  web:
+    80/http: http://web:4001
+
+services:
+  web:
+    build: .
+    ports:
+      - 80:4001
+    environment:
+      - DEVELOPMENT=false
+    command:
+      - _bin/web
