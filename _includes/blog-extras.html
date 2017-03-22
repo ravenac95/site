@@ -44,18 +44,3 @@
 
     return t;
 }(document, "script", "twitter-wjs"));</script>
-
-<script>
-  //sticky sidebar
-$(function(){
-  console.log("foo")
-  $('.blog .extras').affix({
-    offset: {
-      top: 135,
-      bottom: function () {
-        return (this.bottom = $('.footer-bottom').outerHeight(true))
-      }
-    }
-  })
-});
-</script>

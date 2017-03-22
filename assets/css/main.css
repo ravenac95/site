@@ -235,7 +235,7 @@ a code.highlighter-rouge {
   font-weight: 300;
   letter-spacing:0.5px;
   outline: 0;
-  padding: 5px 0 5px 20px;
+  padding: 5px 0 5px 15px;
 }
 
 .navbar .navbar-nav li a:hover,
@@ -265,8 +265,26 @@ a code.highlighter-rouge {
   padding: 5px 15px;
 }
 
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #ea9b23;
+  border-color: transparent;
+  border-width: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
 .navbar .navbar-collapse {
-  border-color: #1777bb;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.navbar .navbar-brand {
+  padding: 15px;
 }
 
 .navbar .navbar-brand img {
@@ -282,6 +300,7 @@ a code.highlighter-rouge {
 
 .navbar .navbar-nav li {
   margin-right: 10px;
+  padding: 5px 0;
 }
 
 .navbar .navbar-nav li:last-child {
@@ -469,8 +488,8 @@ section.lane:not(.feature-boxes) > .container:last-child > .row:last-child > :la
   line-height: 26pt;
 }
 
-.subscribe button#mc-embedded-subscribe,
-.subscribe input#mce-EMAIL {
+button#mc-embedded-subscribe,
+input#mce-EMAIL {
   border-radius: 4px;
 }
 
@@ -807,12 +826,10 @@ footer .footer-menu .slack iframe {
   font-family: Merriweather, serif;
 }
 
-.blog .content {
+.blog .container {
   background: #fff;
   display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 1140px;
+  flex-direction: column;
 }
 
 .blog-author {
@@ -950,23 +967,6 @@ footer .footer-menu .slack iframe {
 
 .blog .extras {
   font-size: 80%;
-  padding-top: 42px;
-}
-
-.blog .extras.affix {
-  top: 30px;
-}
-
-.blog .extras h3:first-of-type {
-  margin-top: 0;
-}
-
-.blog .extras .subscribe-form-field {
-  width: 64%;
-}
-
-.blog .extras .subscribe-form-button {
-  width: 36%;
 }
 
 
@@ -1478,6 +1478,7 @@ footer .footer-menu .slack iframe {
   font-size: .9em;
   font-weight: 300;
   line-height: 1.2em;
+  overflow: hidden;
   padding: 20px;
 }
 
@@ -1973,12 +1974,12 @@ img + em {
 
 /*
  *
- * Utility: vertical alignment
+ * Utility: center alignment
  *
  *
  */
 
-.align-vertical {
+.align-center {
   display: flex;
   align-items: center;
 }

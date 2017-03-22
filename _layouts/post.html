@@ -2,13 +2,15 @@
 layout: blog
 ---
 
-<main class="blog">
-  <section class="content with-extras">
-    <div class="col-md-9 col-sm-12">
-      {% include post.html post=page %}
+<section class="blog">
+  <div class="container with-extras">
+    <div class="row">
+      <div class="col-md-12 col-lg-9">
+        {% include post.html post=page %}
+      </div>
+      <div class="col-md-12 col-lg-3">
+        {% include blog-extras.html %}
+      </div>
     </div>
-    <div class="col-md-3">
-      {% include blog-extras.html %}
-    </div>
-  </section>
-</main>
+  </div>
+</section>
