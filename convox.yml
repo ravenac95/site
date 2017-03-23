@@ -6,8 +6,7 @@ services:
   web:
     build: .
     ports:
-      - 80:4001
+      - "80:4001"
     environment:
       - DEVELOPMENT=false
-    command:
-      - _bin/web
+    command: _bin/web
