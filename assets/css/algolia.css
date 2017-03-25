@@ -1,13 +1,12 @@
 .aa-dropdown-menu {
-  left: auto !important;
-  right: 0px !important;
+  left: 0px !important;
+  right: auto !important;
   text-transform: none;
 }
 
 .aa-input-container {
   display: inline-block;
-  float: right;
-  margin-bottom: -100%;
+  float: left;
   position: relative;
 }
 

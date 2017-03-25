@@ -1,155 +1,98 @@
-/*
-@media (max-width: 768px) {
-  #menu .navbar-nav li:last-child {
-    width: 115px;
-  }
-
-  header .container {
-    padding-top: 60px;
-    padding-bottom: 15px;
-  }
-
-  header .intro-text .name {
-    font-size: 30px;
-  }
-
-  header .intro-text .name-desc {
-    font-size: 40px;
-  }
-
-  header .intro-text .name-desc p {
-    margin-bottom: 20px;
-  }
-
-  header ul.actions li {
-    display: block;
-    margin-bottom: 12px;
-  }
-
-  header .btnshadow {
-    float: none;
-    margin-bottom: 8px;
-  }
-
-  header .intro-text {
-    margin-top: 45px;
-  }
-
-  .testimonials .author {
-    margin-bottom: 3.5rem;
-    display: inline-block;
-  }
-
-  .trusted-client h3 {
-    text-align: center;
-  }
-
-  .trusted-client .thumbnails div {
-    width: 17%;
-  }
-
-  #features .box {
-    height: 300px;
-  }
-
-  #features .box p {
-    height: initial;
-  }
-
-  #features .box img {
-    display: none;
-  }
-
-  .docs #doc {
-    padding: 30px;
-  }
-
-  .jobs #mission {
-    padding: 30px 15px;
-  }
-
-  .jobs #mission p {
-    margin-bottom: 1.5em;
-  }
-
-  .pricing section {
-    padding: 15px 0;
-  }
-
-  .pricing .plan {
-    margin: 0 0 50px !important;
-  }
-
-  .pricing .plan {
-    margin: 0 0 15px;
-    width: 100%;
-  }
-
-  .pricing .plan:last-of-type {
-    margin-bottom: 0;
-  }
-
-  footer .footer-bottom ul.nav-left-col {
-    margin-left: 0;
-    padding-left: 0;
-    margin-bottom: 25px;
-    display: block;
-    overflow: hidden;
-  }
-
-  footer .footer-bottom p {
-    float: left !important;
-  }
-
-	footer .footer-menu .footer-menu-section {
-		border-right: none;
-	}
-
-	footer .footer-menu .slack {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		margin: 0;
-		padding: 10px 50px;
-	}
-
-	footer .footer-menu .slack h2,
-	footer .footer-menu .slack p,
-	footer .footer-menu .slack iframe {
-		text-align: center;
-		margin: 10px 0;
-	}
-
-  footer .col-sm-6 {
-    margin-bottom: 30px;
+@media (min-width: 0px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
-*/
 
-.blog .extras {
-  flex-direction: column;
-  padding: 35px;
-}
-
-.blog .extras section {
-  margin: 0;
-}
-
-.blog .subscribe-form-field {
-  width: 100%;
-}
-
-.blog .subscribe-form-button {
-  width: 100%;
-}
 
 @media (min-width: 768px) {
-  /* TODO */
+  /*
+  *
+  * Global styles: header
+  *
+  */
+
+  header .container {
+    padding-top: calc(70px + 8rem);
+    padding-bottom: calc(0px + 8rem);
+  }
+
+  header h1 {
+    font-size: 32pt;
+    letter-spacing: 0.5pt;
+  }
+
+  header h1 em {
+    font-size: 42pt;
+  }
+
+  header .subheading {
+    font-size: 16pt;
+    line-height: 1.25;
+    margin: 2rem 0 0 0;
+  }
+
+  header .actions a {
+    margin: 0;
+    width: auto;
+  }
+
+
+  /*
+  *
+  * Global styles: buttons
+  *
+  */
+
+  .button {
+    font-size: 12pt;
+  }
+
+
+  /*
+  *
+  * Global styles: sections
+  *
+  */
+
+  section.lane {
+    padding: 8rem 0;
+  }
+
+
+  /*
+   *
+   * Utility: margin classes
+   *
+   *
+   */
+
+  .margin-bottom-0 { margin-bottom: 0; }
+  .margin-bottom-1 { margin-bottom: 2rem; }
+  .margin-bottom-2 { margin-bottom: 4rem; }
+  .margin-bottom-3 { margin-bottom: 6rem; }
+  .margin-bottom-4 { margin-bottom: 8rem; }
+  .margin-bottom-5 { margin-bottom: 10rem; }
+
+  .margin-top-0 { margin-top: 0; }
+  .margin-top-1 { margin-top: 2rem; }
+  .margin-top-2 { margin-top: 4rem; }
+  .margin-top-3 { margin-top: 6rem; }
+  .margin-top-4 { margin-top: 8rem; }
+  .margin-top-5 { margin-top: 10rem; }
 }
 
 @media (min-width: 992px) {
-  /* TODO */
+  /*
+  *
+  * Scoped styles: docs
+  *
+  */
+
+  .docs #doc {
+    padding: 40px 15px 40px 40px;
+  }
 }
 
 @media (min-width: 1200px) {
